@@ -13,9 +13,9 @@
             <h1 class="title">Registro</h1>
 
             <div>
-                <label for="id_pais">País</label>
-                <select id="id_pais" name="id_pais" class="select">
-                    <option selected="false" disabled="disabled" hidden>Seleccione su país</option>
+                <label class="required" for="id_pais">País</label>
+                <select id="id_pais" name="id_pais" class="select" required>
+                    <option value="" selected="false" disabled="disabled" hidden>Seleccione su país</option>
                     <option value="1">Afganistan</option>
                     <option value="2">Albania</option>
                     <option value="3">Alemania</option>
@@ -218,32 +218,32 @@
                 </select>
             </div>
             <div class="inputContainer">
-                <label for="nombre" class="label">Nombre</label>
-                <input type="text" class="input" maxlength="25" id="nombre" name="nombre">
+                <label class="required" for="nombre" class="label">Nombre</label>
+                <input type="text" class="input" maxlength="25" id="nombre" name="nombre" required>
             </div>
             <div class="inputContainer">
-                <label for="apellido" class="label">Apellido</label>
-                <input type="text" class="input" maxlength="25" id="apellido" name="apellido">
+                <label class="required" for="apellido" class="label">Apellido</label>
+                <input type="text" class="input" maxlength="25" id="apellido" name="apellido" required>
             </div>
             <div class="inputContainer">
-                <label for="direccion" class="label">Dirección</label>
-                <input type="text" class="input" maxlength="45" id="direccion" name="direccion">
+                <label class="required" for="direccion" class="label">Dirección</label>
+                <input type="text" class="input" maxlength="45" id="direccion" name="direccion" required>
             </div>
             <div class="inputContainer">
-                <label for="usuario" class="label">Usuario</label>
-                <input type="text" class="input" maxlength="20" id="usuario" name="usuario">
+                <label class="required" for="usuario" class="label">Usuario</label>
+                <input type="text" class="input" maxlength="20" id="usuario" name="usuario" required>
             </div>
             <div class="inputContainer">
-                <label for="password" class="label">Contraseña</label>
-                <input type="password" class="input" id="password" name="password">
+                <label class="required" for="password" class="label">Contraseña</label>
+                <input type="password" class="input" id="password" name="password" required>
             </div>
             <div class="inputContainer">
-                <label for="email" class="label">Email</label>
-                <input type="text" class="input" maxlength="120" id="email" name="email">
+                <label class="required" for="email" class="label">Email</label>
+                <input type="text" class="input" maxlength="120" id="email" name="email" required>
             </div>
             <div class="inputContainer">
-                <label for="telefono" class="label">Teléfono</label>
-                <input type="tel" class="input" maxlength="20" id="telefono" name="telefono">
+                <label class="required" for="telefono" class="label">Teléfono</label>
+                <input type="tel" class="input" maxlength="20" id="telefono" name="telefono" required>
             </div>
             <br>
             <input type="submit" class="submitBtn" value="Registrarse">

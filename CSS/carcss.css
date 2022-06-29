@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    font-family: "lato", sans-serif;
+}
+
+.signupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    background-color: white;
+    width: 1000px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+.title {
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: auto;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e1e2;
+}
+
+.inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 40px;
+}
+
+.input {
+    position: relative;
+    height: 100%;
+    width: 90%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    margin-top: 8px;
+    transition: box-shadow border-color 0.2s ease;
+}
+.input:focus {
+    border-color: #97999c;
+    outline: none !important;
+    box-shadow: 0 0 4px #97999c;
+}
+
+.select {
+    height: 45px;
+    width: 94%;
+    margin-bottom: 17px;
+    border-radius: 7px;
+    padding: 14px;
+    height: 50px;
+    font-size: 16px;
+    border: 1px solid #DADCE0;
+    margin-top: 8px;
+}
+.select:focus {
+    border-color: #97999c;
+    outline: none !important;
+    box-shadow: 0 0 4px #97999c;
+}
+
+textarea {
+    resize: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.submitBtn {
+    display: block;
+    margin: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: #00acae;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: box-shadow 0.2s ease;
+}
+.submitBtn:hover {
+    box-shadow: 0px 0px 5px black;
+}
+.submitBtn:active {
+    background-color: #005759;
+}
+
+.required:after {
+    content:" *";
+    color: red;
+}
